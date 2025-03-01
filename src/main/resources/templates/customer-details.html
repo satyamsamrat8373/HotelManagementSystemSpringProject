@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Customer Details</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Customer Details</h2>
+        <table class="table table-bordered">
+            <tr>
+                <th>ID</th>
+                <td th:text="${customer.id}"></td>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <td th:text="${customer.name}"></td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td th:text="${customer.email}"></td>
+            </tr>
+            <tr>
+                <th>Phone</th>
+                <td th:text="${customer.phone}"></td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td th:text="${customer.address}"></td>
+            </tr>
+            <tr>
+                <th>Room ID</th>
+                <td th:text="${customer.roomid}"></td>
+            </tr>
+            <tr>
+                <th>Payment</th>
+                <td th:text="${customer.payment}"></td>
+            </tr>
+        </table>
+        <a href="/customers" class="btn btn-secondary">Back to List</a>
+    </div>
+</body>
+</html>
